@@ -9,7 +9,7 @@ class AppPage extends BorderPaneElement {
 
   onInit(): void {
     this.left = new ListComponents({ minWidth: "200px" });
-    this.center = new RouteView({ backgroundColor: "blue" });
+    this.center = new RouteView({ backgroundColor: "rgb(138, 141, 143)" });
   }
 
 }

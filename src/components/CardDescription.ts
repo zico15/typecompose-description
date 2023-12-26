@@ -6,7 +6,7 @@ export class CardDescription extends BorderPaneElement {
     private backgroundColorDisplay: ParagraphElement = new ParagraphElement({ text: "white" });
 
     constructor(data?: DataElement) {
-        super({ backgroundColor: "rgb(138, 141, 143)", ...data });
+        super(data);
         this.top = new CardElement({ width: "100%", height: "100px", backgroundColor: this.color });
         this.center = new VBoxElement({ gap: "10px", margin: "20px" });
     }
