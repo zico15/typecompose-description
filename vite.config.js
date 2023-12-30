@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import typeComposePlugin from "typecompose-plugin";
-import manifest from "./manifest.json";
 // // const logger = createLogger()
 // const loggerWarn = logger.warn
 // logger.warn = (msg, options) => {
@@ -9,12 +8,6 @@ import manifest from "./manifest.json";
 // }
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    typeComposePlugin({
-      pwa: {
-        manifest,
-      },
-    }),
-  ],
+  plugins: [typeComposePlugin()],
 });
 //# sourceMappingURL=vite.config.js.map

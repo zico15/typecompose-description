@@ -22,6 +22,8 @@ export class ListComponents extends GridElement {
 
     onInit(): void {
         this.list.addItem(new ListComponentItem("Button"));
+        this.list.addItem(new ListComponentItem("Card"));
+        this.list.addItem(new ListComponentItem("TabPane"));
         this.list.addItem(new ListComponentItem("Input"));
         this.list.addItem(new ListComponentItem("Label"));
         this.list.addItem(new ListComponentItem("Image"));
@@ -47,13 +49,11 @@ export class ListComponents extends GridElement {
         this.list.addItem(new ListComponentItem("Progress"));
         this.list.addItem(new ListComponentItem("ProgressBar"));
         this.list.addItem(new ListComponentItem("Accordion"));
-        this.list.addItem(new ListComponentItem("Tabs"));
         this.list.addItem(new ListComponentItem("Dialog"));
         this.list.addItem(new ListComponentItem("Tooltip"));
         this.list.addItem(new ListComponentItem("Menu"));
         this.list.addItem(new ListComponentItem("MenuBar"));
         this.list.addItem(new ListComponentItem("MenuItem"));
-        this.list.addItem(new ListComponentItem("Card"));
     }
 
 
