@@ -1,4 +1,4 @@
-import { AnchorElement, DataElement, GridElement, ListElement } from "typecompose";
+import { AnchorElement, StyleOptional, GridElement, ListElement } from "typecompose";
 
 export class ListComponentItem extends GridElement {
 
@@ -13,7 +13,7 @@ export class ListComponents extends GridElement {
 
     private list: ListElement = new ListElement();
 
-    constructor(data?: DataElement) {
+    constructor(data?: StyleOptional) {
         super(data);
         this.columns = "auto";
         this.rows = "auto"

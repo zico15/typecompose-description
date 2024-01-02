@@ -1,11 +1,11 @@
-import { BorderPaneElement, ButtonElement, CardElement, DataElement, H1Element, H2Element, HBoxElement, Ref, VBoxElement } from "typecompose";
+import { BorderPaneElement, ButtonElement, CardElement, StyleOptional, H1Element, H2Element, HBoxElement, Ref, VBoxElement } from "typecompose";
 
 export class CardDescription extends BorderPaneElement {
 
     private color: Ref<string> = new Ref("white");
     private backgroundColorDisplay: H2Element = new H2Element({ text: "white", color: "white" });
 
-    constructor(data?: DataElement) {
+    constructor(data?: StyleOptional) {
         super(data);
         this.center = new VBoxElement({ gap: "10px", margin: "20px" });
     }

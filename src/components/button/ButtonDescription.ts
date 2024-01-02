@@ -1,26 +1,54 @@
-import { BorderPaneElement, DataElement, DivElement, Ref, RefComponent } from "typecompose";
+import { ButtonElement, FormElement, HBoxElement, InputElement, StyleOptional } from "typecompose";
 
-export class ButtonDescription extends BorderPaneElement {
+type action = "get" | "post" | "put" | "delete";
 
-    ref2 = new Ref("white");
+class FormElement2 extends FormElement {
 
 
-    @RefComponent({ id: "tes" })
-    tes!: DivElement;
+    constructor() {
+        super();
+    }
 
-    constructor(data?: DataElement) {
-        super(data);
-        this.tes.style.color = this.ref2;
-        console.log("ButtonDescription: ", this.tes);
-        this.tes.onclick = () => {
-            this.ref2.value = "red";
+    onInit(): void {
+        console.log("FormElement2: ", this);
+    }
+
+    destructor(): void {
+        console.log("destructor: ", this.constructor.name);
+    }
+}
+
+// @ts-ignore
+export class ButtonDescription extends HBoxElement {
+
+
+    constructor(styles?: StyleOptional) {
+        super(styles);
+        // text
+        const form = new FormElement({ gap: "10px", margin: "20px", method: "post", action: "https://reqbin.com/echo/post/json" });
+        const name = new InputElement({ text: "name", type: "text", id: "name", name: "name" });
+        const button = new ButtonElement({ text: "ButtonElement", color: "white", textAlign: "center", type: "submit" });
+        button.onclick = () => {
+            // @ts-ignore
+            console.log("button: ");
         }
+
+        form.append(name, button);
+        this.appendChild(form);
+        // this.tes.style.color = this.ref2;
+        // console.log("ButtonDescription: ", this.tes);
+        // this.tes.onclick = () => {
+        //     this.ref2.value = "red";
+        // }
         // this.center = new VBoxElement({ gap: "10px", margin: "20px" });
         // AppPage.ref = new WeakRef(this);
         // // AppPage.weakMaps.set(this, AppPage.ref);
     }
 
     onInit(): void {
+
+
+
         // this.center.append(new H1Element({ text: "ButtonElement", color: this.ref2, textAlign: "center" }));
         // const inputa: InputElement = this.center.appendChild(new InputElement({ text: "ButtonElement", textAlign: "center" }));
         // const text = this.center.appendChild(new H5Element({ text: this.ref2, color: "white", textAlign: "center" }));
