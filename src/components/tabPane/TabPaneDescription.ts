@@ -11,7 +11,7 @@ export class TabPaneDescription extends BorderPaneElement {
         this.center = new VBoxElement({ gap: "10px", margin: "20px" });
     }
 
-    onInit(): void {
+    oninit(): void {
         this.center.append(new H1Element({ text: "TabPane", color: 'white', textAlign: "center" }));
         this.center.append(this.tabPane);
         const panel = this.center.appendChild(new HBoxElement({ gap: "10px", alignItems: "center" }));

@@ -10,8 +10,8 @@
   },
   "devDependencies": {
     "sass": "^1.69.5",
-    "typecompose": "^0.0.75",
-    "typecompose-plugin": "^0.1.5",
+    "typecompose": "^0.0.81",
+    "typecompose-plugin": "^0.1.7",
     "typescript": "^5.3.2",
     "vite": "^5.0.0"
   },

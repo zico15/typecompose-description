@@ -1,31 +1,12 @@
 import { ButtonElement, FormElement, HBoxElement, InputElement, StyleOptional } from "typecompose";
 
-type action = "get" | "post" | "put" | "delete";
-
-class FormElement2 extends FormElement {
-
-
-    constructor() {
-        super();
-    }
-
-    onInit(): void {
-        console.log("FormElement2: ", this);
-    }
-
-    destructor(): void {
-        console.log("destructor: ", this.constructor.name);
-    }
-}
-
 // @ts-ignore
 export class ButtonDescription extends HBoxElement {
-
 
     constructor(styles?: StyleOptional) {
         super(styles);
         // text
-        const form = new FormElement({ gap: "10px", margin: "20px", method: "post", action: "https://reqbin.com/echo/post/json" });
+        const form = new FormElement({ gap: "10px", margin: "20px", method: "get" });
         const name = new InputElement({ text: "name", type: "text", id: "name", name: "name" });
         const button = new ButtonElement({ text: "ButtonElement", color: "white", textAlign: "center", type: "submit" });
         button.onclick = () => {
@@ -45,7 +26,7 @@ export class ButtonDescription extends HBoxElement {
         // // AppPage.weakMaps.set(this, AppPage.ref);
     }
 
-    onInit(): void {
+    oninit(): void {
 
 
 

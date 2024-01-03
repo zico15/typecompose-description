@@ -10,7 +10,7 @@ export class CardDescription extends BorderPaneElement {
         this.center = new VBoxElement({ gap: "10px", margin: "20px" });
     }
 
-    onInit(): void {
+    oninit(): void {
         const buttons = new HBoxElement({ gap: "10px", alignItems: "center", justifyContent: "center" });
         buttons.append(new ButtonElement({ text: "red", backgroundColor: "red", color: "white", onclick: () => this.setBackgroundColor("red") }));
         buttons.append(new ButtonElement({ text: "green", backgroundColor: "green", color: "white", onclick: () => this.setBackgroundColor("green") }));

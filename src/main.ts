@@ -1,33 +1,35 @@
-import { BorderPaneElement, ButtonElement, router, RouteView } from 'typecompose'
+import { BorderPaneElement, ButtonElement, RouteView, router } from 'typecompose'
 import './style.css'
-import { ListComponents } from './list/ListComponents';
 import { CardDescription } from './components/card/CardDescription';
 import { ButtonDescription } from './components/button/ButtonDescription';
 import { TabPaneDescription } from './components/tabPane/TabPaneDescription';
+import { BorderPaneDescription } from './components/borderPane/BorderPaneDescription';
+import { ListComponents } from './list/ListComponents';
 
 export class AppPage extends BorderPaneElement {
 
-  public static ref: WeakRef<any> | undefined;
-  public static weakMaps = new WeakSet();
+  constructor() {
+    super({ variant: "secondary" });
+  }
 
-
-  onInit(): void {
+  oninit(): void {
     this.top = new ButtonElement({
       text: "test", onclick: () => {
-        console.log("AppPage.ref: ", AppPage.ref?.deref());
       }
     });
 
 
-    this.left = new ListComponents({ minWidth: "200px" });
+    this.left = new ListComponents({ minWidth: "200px", width: "auto" });
     this.center = new RouteView({ backgroundColor: "rgb(138, 141, 143)" });
 
   }
+
 
 }
 
 router.put('/', AppPage, [
   { pathname: 'card', component: CardDescription },
   { pathname: 'button', component: ButtonDescription },
-  { pathname: 'tabpane', component: TabPaneDescription }
+  { pathname: 'tabpane', component: TabPaneDescription },
+  { pathname: 'borderpane', component: BorderPaneDescription }
 ])
