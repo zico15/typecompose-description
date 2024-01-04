@@ -20,11 +20,12 @@ export class ListComponents extends GridElement {
         this.append(this.list);
     }
 
-    oninit(): void {
+    onInit(): void {
         this.list.addItem(new ListComponentItem("Button"));
         this.list.addItem(new ListComponentItem("Card"));
         this.list.addItem(new ListComponentItem("TabPane"));
         this.list.addItem(new ListComponentItem("BorderPane"));
+        this.list.addItem(new ListComponentItem("StackPane"));
         this.list.addItem(new ListComponentItem("Input"));
         this.list.addItem(new ListComponentItem("Label"));
         this.list.addItem(new ListComponentItem("Image"));

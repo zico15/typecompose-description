@@ -5,6 +5,7 @@ import { ButtonDescription } from './components/button/ButtonDescription';
 import { TabPaneDescription } from './components/tabPane/TabPaneDescription';
 import { BorderPaneDescription } from './components/borderPane/BorderPaneDescription';
 import { ListComponents } from './list/ListComponents';
+import { StackPaneDescription } from './components/stackPane/StackPaneDescription';
 
 export class AppPage extends BorderPaneElement {
 
@@ -12,7 +13,7 @@ export class AppPage extends BorderPaneElement {
     super({ variant: "secondary" });
   }
 
-  oninit(): void {
+  onInit(): void {
     this.top = new ButtonElement({
       text: "test", onclick: () => {
       }
@@ -31,5 +32,6 @@ router.put('/', AppPage, [
   { pathname: 'card', component: CardDescription },
   { pathname: 'button', component: ButtonDescription },
   { pathname: 'tabpane', component: TabPaneDescription },
-  { pathname: 'borderpane', component: BorderPaneDescription }
+  { pathname: 'borderpane', component: BorderPaneDescription },
+  { pathname: 'stackpane', component: StackPaneDescription }
 ])

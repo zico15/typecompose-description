@@ -26,7 +26,7 @@ export class ButtonDescription extends HBoxElement {
         // // AppPage.weakMaps.set(this, AppPage.ref);
     }
 
-    oninit(): void {
+    onInit(): void {
 
 
 
