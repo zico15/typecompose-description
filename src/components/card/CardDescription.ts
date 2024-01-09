@@ -32,3 +32,4 @@ export class CardDescription extends BorderPaneElement {
         this.backgroundColorDisplay.innerHTML = `new CardElement({ backgroundColor: '${this.color}' });`;
     }
 }
+console.log("CardDescription: ");
