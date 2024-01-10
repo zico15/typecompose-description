@@ -26,17 +26,29 @@ const router = Router.create({
           component: ButtonDescription,
         },
         {
-          path: '*',
-          component: TabPaneDescription,
-        },
-        {
           path: 'borderpane',
           component: BorderPaneDescription,
+          children: [
+            {
+              path: '*',
+              component: CardDescription,
+            }
+          ]
         },
         {
           path: 'stackpane',
           component: StackPaneDescription,
-        }
+        },
+        // {
+        //   path: '*',
+        //   component: TabPaneDescription,
+        //   children: [
+        //     {
+        //       path: '*',
+        //       component: CardDescription,
+        //     }
+        //   ]
+        // },
       ],
     }
 
