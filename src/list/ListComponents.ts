@@ -11,7 +11,7 @@ export class ListComponentItem extends GridElement {
 
 export class ListComponents extends GridElement {
 
-    private list: ListElement = new ListElement();
+    private list: ListElement<ListComponentItem> = new ListElement();
 
     constructor(data?: StyleOptional) {
         super(data);
@@ -23,6 +23,7 @@ export class ListComponents extends GridElement {
     onInit(): void {
         this.list.addItem(new ListComponentItem("Button"));
         this.list.addItem(new ListComponentItem("Card"));
+        this.list.addItem(new ListComponentItem("TextField"));
         this.list.addItem(new ListComponentItem("TabPane"));
         this.list.addItem(new ListComponentItem("BorderPane"));
         this.list.addItem(new ListComponentItem("StackPane"));

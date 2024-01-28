@@ -1,13 +1,7 @@
-import { BorderPaneElement, ButtonElement, DivElement, RouteView, Router } from 'typecompose'
+import { BorderPaneElement, CardElement, RouteView, Router } from 'typecompose'
 import './style.css'
-import { SideBarElement } from './SideBarElement/SideBarElement';
 import { ListComponents } from './list/ListComponents';
-
-export class SuperDiv extends DivElement {
-  constructor() {
-    super({ className: "super-div" });
-  }
-}
+import { SideBarItem } from './SideBarElement/SideBarElement.ts';
 
 export class AppPage extends BorderPaneElement {
 
@@ -16,52 +10,19 @@ export class AppPage extends BorderPaneElement {
   }
 
   onInit(): void {
-
-    this.left = new ListComponents({ minWidth: "200px", width: "auto" });
+    this.top = new CardElement({ height: "50px", width: "100%" });
+    const s = new SideBarItem();
+    this.left = s;
     this.center = new RouteView({ backgroundColor: "rgb(138, 141, 143)" });
-    // const sidebar = new SideBarElement({ expanded: "auto" });
+    // this.bottom = new CardElement({ height: "50px", width: "100%" });
+    // // const hbox = new HBoxElement({});
+    // hbox.append(new ButtonElement({ text: "home", color: "white" }));
 
-    // sidebar.addItem("home", "home-outline", "center", () => {
-    //   console.log("home");
-    // });
-
-    // sidebar.addItem("cube", "cube-outline", "center", () => {
-    //   console.log("cube");
-    // });
-
-    // sidebar.addItem("settings", "settings-outline", "center", () => {
-    //   console.log("settings");
-    // });
-
-    // sidebar.addItem("exit", "exit-outline", "bottom", () => {
-    //   console.log("exit");
-    // });
-
-
-    // this.left = sidebar;
-
-    this.top = new ButtonElement({
-      text: "test", onclick: () => {
-        console.log("test");
-        // sidebar.toggle();
-      }
-    });
-
-
-
-
+    // const tex = hbox.appendChild(new TextFieldElement({ text: "oi field" }));
+    // hbox.append(new ButtonElement({ text: "card", color: "white", onclick: () => console.log("card: ", tex.input.value) }));
+    // // this.bottom.append(hbox);
   }
-
 
 }
 
-
-Router.use(() => import('./router'));
-
-// router.put('/', AppPage, [
-//   { pathname: 'card', component: CardDescription },
-//   { pathname: 'button', component: ButtonDescription },
-//   { pathname: 'tabpane', component: TabPaneDescription },
-//   { pathname: 'borderpane', component: BorderPaneDescription },
-//   { pathname: 'stackpane', component: StackPaneDescription }
-// ])
+Router.use(() => import('./router/index.ts'));

@@ -1,4 +1,4 @@
-import { BorderPaneElement, ButtonElement, CardElement, StyleOptional, H1Element, H2Element, HBoxElement, Ref, VBoxElement } from "typecompose";
+import { BorderPaneElement, ButtonElement, CardElement, StyleOptional, H1Element, H2Element, HBoxElement, Ref, VBoxElement, Register } from "typecompose";
 
 export class CardDescription extends BorderPaneElement {
 
@@ -7,10 +7,12 @@ export class CardDescription extends BorderPaneElement {
 
     constructor(data?: StyleOptional) {
         super(data);
+        this.center
         this.center = new VBoxElement({ gap: "10px", margin: "20px" });
     }
 
     onInit(): void {
+
         const buttons = new HBoxElement({ gap: "10px", alignItems: "center", justifyContent: "center" });
         buttons.append(new ButtonElement({ text: "red", backgroundColor: "red", color: "white", onclick: () => this.setBackgroundColor("red") }));
         buttons.append(new ButtonElement({ text: "green", backgroundColor: "green", color: "white", onclick: () => this.setBackgroundColor("green") }));

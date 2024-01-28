@@ -4,15 +4,12 @@ import { ButtonDescription } from '../components/button/ButtonDescription'
 import { CardDescription } from '../components/card/CardDescription'
 import { StackPaneDescription } from '../components/stackPane/StackPaneDescription'
 import { AppPage } from '../main'
+import { TextFieldDescription } from '../components/textField/TextFieldDescription'
 import { TabPaneDescription } from '../components/tabPane/TabPaneDescription'
 
 const router = Router.create({
   history: 'history',
   routes: [
-    {
-      path: '/test',
-      component: StackPaneDescription,
-    },
     {
       path: '/',
       component: AppPage,
@@ -24,6 +21,10 @@ const router = Router.create({
         {
           path: 'button',
           component: ButtonDescription,
+        },
+        {
+          path: 'textfield',
+          component: TextFieldDescription,
         },
         {
           path: 'borderpane',
@@ -39,16 +40,10 @@ const router = Router.create({
           path: 'stackpane',
           component: StackPaneDescription,
         },
-        // {
-        //   path: '*',
-        //   component: TabPaneDescription,
-        //   children: [
-        //     {
-        //       path: '*',
-        //       component: CardDescription,
-        //     }
-        //   ]
-        // },
+        {
+          path: 'tabpane',
+          component: TabPaneDescription,
+        }
       ],
     }
 
