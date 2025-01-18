@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme="light"] {
+  --primary-background-color: #242424;
+  background-color: #1c1e21 !important;
+  --sk-font-family-body: "EB Garamond", Georgia, serif;
+  --sk-font-size-body: 2.2rem;
+  --sk-font-size-body-small: 2rem;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+span {
+  color: rgb(135, 138, 146);
+}
+
+p {
+  color: rgb(202, 203, 206);
+  font-family: "EB Garamond", Georgia, serif;
+  font-feature-settings: normal;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  width: auto;
+  height: 150px;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+h1 {
+  color: rgb(227, 227, 227);
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 35.2px;
+  font-weight: 400;
+  height: 28.7969px;
+  line-height: 28.8px;
+  margin-block-end: 45.7601px;
+  margin-block-start: 0px;
+  margin-bottom: 30.7601px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  padding-bottom: 28.16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10.56px;
+  unicode-bidi: isolate;
+}
+
+h2 {
+  color: rgb(227, 227, 227);
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30.2px;
+  font-weight: 400;
+  height: 28.7969px;
+  line-height: 28.8px;
+  margin-block-end: 45.7601px;
+  margin-block-start: 0px;
+  margin-bottom: 30.7601px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  padding-bottom: 28.16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10.56px;
+  unicode-bidi: isolate;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  min-width: 250px;
+  width: max-content;
+  background-color: #2b2b2b;
+  color: #fcfffa;
+  padding: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sidebar ol {
+  padding-left: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: #878a92;
+  position: relative;
+}
+
+.sidebar li.selected::before {
+  content: "◆";
+  color: #1e90ff;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  a {
+    margin-left: 0px;
+  }
+}
+
+.sidebar li.selected {
+  color: #fcfffa;
+  font-weight: bold;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar li a:hover {
+  color: #f7df1e;
+}
+
+.sidebar details summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  color: inherit;
+  transition: color 0.2s ease;
+  outline: none;
+}
+
+.sidebar details summary:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.sidebar details {
+  border: none;
+}
+
+.sidebar details summary::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+  color: #fcfffa;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.sidebar details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.sidebar li, /* Aplica a regra aos itens da lista */
+.sidebar li a, /* Aplica a regra aos links */
+.sidebar summary {
+  /* Aplica a regra aos sumários */
+  white-space: nowrap; /* Evita a quebra de linha */
+  overflow: hidden; /* Esconde o texto excedente */
+  text-overflow: ellipsis; /* Adiciona "..." ao final, se o texto for muito longo */
+}

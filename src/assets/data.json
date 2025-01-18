@@ -1,0 +1,115 @@
+{
+  "sidebar": [
+    {
+      "title": "Introduction",
+      "items": [
+        {
+          "title": "What is TypeComposer?",
+          "link": "docs"
+        },
+        {
+          "title": "Getting Started",
+          "link": "docs/getting-started"
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "items": [
+        {
+          "title": "Component",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Basse Components",
+      "items": [
+        {
+          "title": "Button",
+          "link": ""
+        },
+        {
+          "title": "Input",
+          "link": ""
+        },
+        {
+          "title": "Select",
+          "link": ""
+        },
+        {
+          "title": "Checkbox",
+          "link": ""
+        },
+        {
+          "title": "Radio",
+          "link": ""
+        },
+        {
+          "title": "Switch",
+          "link": ""
+        },
+        {
+          "title": "Slider",
+          "link": ""
+        },
+        {
+          "title": "Datepicker",
+          "link": ""
+        },
+        {
+          "title": "Timepicker",
+          "link": ""
+        },
+        {
+          "title": "Tabs",
+          "link": ""
+        },
+        {
+          "title": "Modal",
+          "link": ""
+        },
+        {
+          "title": "Tooltip",
+          "link": ""
+        },
+        {
+          "title": "Popover",
+          "link": ""
+        },
+        {
+          "title": "Alert",
+          "link": ""
+        },
+        {
+          "title": "Notification",
+          "link": ""
+        },
+        {
+          "title": "Progress",
+          "link": ""
+        },
+        {
+          "title": "Spinner",
+          "link": ""
+        },
+        {
+          "title": "Avatar",
+          "link": ""
+        },
+        {
+          "title": "Badge",
+          "link": ""
+        },
+        {
+          "title": "Breadcrumb",
+          "link": ""
+        },
+        {
+          "title": "Card",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}

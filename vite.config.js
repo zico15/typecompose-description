@@ -1,13 +1,19 @@
 import { defineConfig } from "vite";
-import typeComposePlugin from "typecompose-plugin";
-// // const logger = createLogger()
-// const loggerWarn = logger.warn
-// logger.warn = (msg, options) => {
-//   if (msg.includes('vite:html') && msg.includes(' is empty')) return
-//   loggerWarn(msg, options)
-// }
-// https://vitejs.dev/config/
+import typeComposerPlugin from "typecomposer-plugin";
+import path from "path";
+
 export default defineConfig({
-  plugins: [typeComposePlugin()],
+  plugins: [typeComposerPlugin()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern-compiler",
+      },
+    },
+  },
 });
-//# sourceMappingURL=vite.config.js.map

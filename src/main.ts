@@ -1,28 +1,22 @@
-import { BorderPaneElement, CardElement, RouteView, Router } from 'typecompose'
-import './style.css'
-import { ListComponents } from './list/ListComponents';
-import { SideBarItem } from './SideBarElement/SideBarElement.ts';
+import typescriptLogo from "/typescript.svg";
+import logo from "/typecomposer.svg";
+import { App, BorderPaneElement, ButtonElement, Component, H1Element, HBoxElement, ImageElement, RouteView, VBoxElement } from "typecomposer";
+import "./style.scss";
+import "highlight.js/styles/atom-one-dark.css";
+import { NavBar } from "./components/navbar/NavBar";
+import { Sidebar } from "./components/sidebar/Sidebar";
 
 export class AppPage extends BorderPaneElement {
 
+
+
   constructor() {
-    super({ variant: "secondary" });
+    super({
+      className: "w-screen h-screen overflow-hidden",
+    });
+    this.top = new NavBar();
+    this.left = new Sidebar();
+    this.center = new RouteView({ className: "overflow-hidden w-full h-full" });
   }
-
-  onInit(): void {
-    this.top = new CardElement({ height: "50px", width: "100%" });
-    const s = new SideBarItem();
-    this.left = s;
-    this.center = new RouteView({ backgroundColor: "rgb(138, 141, 143)" });
-    // this.bottom = new CardElement({ height: "50px", width: "100%" });
-    // // const hbox = new HBoxElement({});
-    // hbox.append(new ButtonElement({ text: "home", color: "white" }));
-
-    // const tex = hbox.appendChild(new TextFieldElement({ text: "oi field" }));
-    // hbox.append(new ButtonElement({ text: "card", color: "white", onclick: () => console.log("card: ", tex.input.value) }));
-    // // this.bottom.append(hbox);
-  }
-
 }
 
-Router.use(() => import('./router/index.ts'));
