@@ -1,0 +1,152 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": { "innerText": "TypeComposer ∙ Component" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Overview" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The TypeComposer framework offers two main approaches for creating components, depending on your needs:"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "1. Extending the Component class" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "When a component is created by extending the Component class, it generates a custom HTML tag whose name corresponds to the class name converted to kebab-case. This approach is ideal for creating entirely new and semantically unique components."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Example:" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { Component } from 'typecomposer';\n\nclass AppPage extends Component {\n  constructor() {\n    super({\n      text: 'Welcome to the page!',\n      padding: '20px',\n    });\n  }\n}\n\nexport default AppPage;"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Generated HTML Tag:" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "language": "html",
+        "code": "<app-page>\n  Welcome to the page!\n</app-page>"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Features:" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The class name is automatically converted to kebab-case to generate the custom tag name."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Full flexibility to define the component's appearance and behavior."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Ideal for creating application-specific, custom components."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "2. Extending Base Components" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "In this approach, a component is created by extending a base component (like DivElement, ButtonElement, etc.). The HTML tag and behavior of the base component remain unchanged, but you can add specific properties and logic."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Example:" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { DivElement } from 'typecomposer';\n\nclass AppPage extends DivElement {\n  constructor() {\n    super({\n      text: 'This is a custom Div.',\n      padding: '10px',\n      backgroundColor: '#f0f0f0',\n    });\n  }\n}\n\nexport default AppPage;"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Generated HTML Tag:" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "language": "html",
+        "code": "<div style='padding: 10px; background-color: #f0f0f0;'>\n  This is a custom Div.\n</div>"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Features:" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The generated HTML tag matches the base component used."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Perfect for creating variations or enhancements of existing HTML elements."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Inherits the standard functionality of the base component, reducing the need for custom logic."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Conclusion" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The choice between the two approaches depends on your component's requirements."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Use Component to create new, custom HTML elements."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Use base components when you need lightweight extensions or to reuse existing behavior."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Both options preserve the simplicity and consistency of TypeComposer, making interface development and maintenance easier."
+      }
+    }
+  ]
+}

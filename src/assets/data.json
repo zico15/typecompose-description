@@ -14,100 +14,63 @@
       ]
     },
     {
+      "title": "Router",
+      "link": "router",
+      "items": []
+    },
+    {
       "title": "Components",
       "items": [
         {
           "title": "Component",
-          "link": ""
+          "link": "components/component"
         }
       ]
     },
     {
-      "title": "Basse Components",
+      "title": "Layout",
       "items": [
         {
+          "title": "BorderPane",
+          "link": "layout/border-pane"
+        },
+        { "title": "Vbox", "link": "layout/vbox" },
+        {
+          "title": "Hbox",
+          "link": "layout/hbox"
+        }
+      ]
+    },
+    {
+      "title": "Elements",
+      "items": [
+        {
+          "title": "Div",
+          "link": "elements/div"
+        },
+        {
           "title": "Button",
-          "link": ""
+          "link": "elements/button"
         },
         {
           "title": "Input",
-          "link": ""
+          "link": "elements/input"
         },
         {
-          "title": "Select",
-          "link": ""
+          "title": "Label",
+          "link": "elements/label"
         },
         {
-          "title": "Checkbox",
-          "link": ""
+          "title": "Table",
+          "link": "elements/table"
         },
         {
-          "title": "Radio",
-          "link": ""
+          "title": "Span",
+          "link": "elements/span"
         },
         {
-          "title": "Switch",
-          "link": ""
-        },
-        {
-          "title": "Slider",
-          "link": ""
-        },
-        {
-          "title": "Datepicker",
-          "link": ""
-        },
-        {
-          "title": "Timepicker",
-          "link": ""
-        },
-        {
-          "title": "Tabs",
-          "link": ""
-        },
-        {
-          "title": "Modal",
-          "link": ""
-        },
-        {
-          "title": "Tooltip",
-          "link": ""
-        },
-        {
-          "title": "Popover",
-          "link": ""
-        },
-        {
-          "title": "Alert",
-          "link": ""
-        },
-        {
-          "title": "Notification",
-          "link": ""
-        },
-        {
-          "title": "Progress",
-          "link": ""
-        },
-        {
-          "title": "Spinner",
-          "link": ""
-        },
-        {
-          "title": "Avatar",
-          "link": ""
-        },
-        {
-          "title": "Badge",
-          "link": ""
-        },
-        {
-          "title": "Breadcrumb",
-          "link": ""
-        },
-        {
-          "title": "Card",
-          "link": ""
+          "title": "Heading",
+          "link": "elements/heading"
         }
       ]
     }

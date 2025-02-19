@@ -1,0 +1,165 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": { "innerText": "TypeComposer ∙ VBoxElement" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Overview" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The VBoxElement is a container component in TypeComposer designed to stack its child elements vertically. It comes with built-in styles for vertical alignment and is highly customizable through its properties."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "1. Key Features" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Automatically aligns child elements vertically using flex-direction: column."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Supports customization such as spacing, alignment, and events directly through properties."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Simplifies creation of column-based layouts in a structured way."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "2. Basic Example" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { VBoxElement, DivElement } from \"typecomposer\";\n\nclass ExampleVBox extends VBoxElement {\n  constructor() {\n  super({\n    gap: \"10px\",\n    padding: \"20px\",\n    backgroundColor: \"#ffffff\",\n    border: \"1px solid #ccc\",\n    children: [\n    new DivElement({ text: \"Item 1\", padding: \"10px\", backgroundColor: \"#f0f0f0\" }),\n    new DivElement({ text: \"Item 2\", padding: \"10px\", backgroundColor: \"#d0d0d0\" }),\n    new DivElement({ text: \"Item 3\", padding: \"10px\", backgroundColor: \"#b0b0b0\" }),\n    ],\n  });\n  }\n}\n\nexport default ExampleVBox;"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "3. Properties" }
+    },
+    {
+      "component": "TableElement",
+      "props": {
+        "headers": ["Property", "Type", "Description", "Example"],
+        "rows": [
+          ["children", "Element[]", "An array of child components to be rendered inside the VBoxElement.", "[new DivElement(...), new ButtonElement(...)]"],
+          ["gap", "string (optional)", "Specifies spacing between child elements.", "\"10px\""],
+          ["padding", "string (optional)", "Adds padding inside the container.", "\"20px\""],
+          ["backgroundColor", "string (optional)", "Sets the background color of the container.", "\"#ffffff\""],
+          ["border", "string (optional)", "Adds a border around the container.", "\"1px solid #ccc\""],
+          ["alignItems", "string (optional)", "Aligns child elements horizontally (e.g., center, flex-start, flex-end).", "\"center\""],
+          ["justifyContent", "string (optional)", "Aligns child elements vertically within the container (e.g., center, space-between).", "\"center\""],
+          ["onclick", "function (optional)", "Event handler for click events.", "() => alert(\"VBox clicked!\")"]
+        ],
+        "className": "border border-gray-300"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "4. Examples" }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Spacing Between Items" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new VBoxElement({\n  gap: \"15px\",\n  padding: \"10px\",\n  backgroundColor: \"#f8f9fa\",\n  children: [\n    new DivElement({ text: \"Item 1\", padding: \"5px\", backgroundColor: \"#e0e0e0\" }),\n    new DivElement({ text: \"Item 2\", padding: \"5px\", backgroundColor: \"#c0c0c0\" }),\n    new DivElement({ text: \"Item 3\", padding: \"5px\", backgroundColor: \"#a0a0a0\" }),\n  ],\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Aligning Items" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new VBoxElement({\n  alignItems: \"center\",\n  padding: \"20px\",\n  children: [\n    new DivElement({ text: \"Aligned Item 1\", padding: \"10px\" }),\n    new DivElement({ text: \"Aligned Item 2\", padding: \"10px\" }),\n  ],\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Vertical Justification" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new VBoxElement({\n  justifyContent: \"space-between\",\n  height: \"200px\",\n  children: [\n    new DivElement({ text: \"Top Item\", padding: \"10px\" }),\n    new DivElement({ text: \"Bottom Item\", padding: \"10px\" }),\n  ],\n});"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "5. Default Behavior" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "By default, the VBoxElement:"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Aligns child elements vertically using flex-direction: column."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Has no spacing between elements unless specified with the gap property."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Allows full customization through its properties."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "6. When to Use VBoxElement" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- When you need to stack elements vertically in a clean and structured way."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- When creating column-based layouts."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- When alignment and spacing between child elements need to be handled efficiently."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Conclusion" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The VBoxElement simplifies the process of creating vertical layouts by providing built-in alignment and spacing properties. Its property-driven design ensures that you can quickly customize the container without needing to manually write styles. It’s the perfect choice for creating organized and responsive column-based layouts in TypeComposer."
+      }
+    }
+  ]
+}

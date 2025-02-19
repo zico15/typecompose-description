@@ -1,0 +1,70 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": {
+        "innerText": "Typecomposer . Introduction 2"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": {
+        "innerText": "Overview"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "TypeComposer is a framework for building web user interfaces using native web standards. It emphasizes a class-based approach where components are defined as ES6 classes extending HTMLElement. This structure leverages native browser APIs, resulting in efficient, streamlined JavaScript code."
+      }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { Component, ButtonElement } from 'typecomposer';\n\nexport class AppPage extends Component {\n  constructor() {\n    super();\n\n    const button = new ButtonElement({ text: 'Click me'});\n    button.onclick = () => alert('Welcome to TypeComposer!');\n    button.style.fontSize = '4em';\n\n    this.append(button);\n  }\n}"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "In TypeComposer, components can range from simple reusable elements to complete web applications, ensuring flexibility and scalability. Styles, event listeners, and logic are applied directly, maintaining full control over the DOM."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": {
+        "innerText": "Features"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Declarative Design: Components are defined using JavaScript classes, focusing on clean and maintainable code."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Native Performance: Built directly on web platform standards without extra runtime abstractions."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Scalability: Suitable for creating everything from small widgets to comprehensive web apps."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Integrated Component Registration: Components are automatically registered with the browser using customElements."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "These pages serve as the official documentation. If you're new to TypeComposer, start with the interactive examples and return here for detailed references."
+      }
+    }
+  ]
+}

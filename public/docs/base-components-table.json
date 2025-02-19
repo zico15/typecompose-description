@@ -1,0 +1,148 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": { "innerText": "TypeComposer ∙ TableElement" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Overview" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The TableElement is a flexible component in TypeComposer, designed for creating dynamic and styled tables. It extends the functionality of the standard HTML table, allowing property-driven customization for headers, rows, and overall table styling."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "1. Key Features" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Allows for dynamic configuration of headers and rows using properties." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Supports customization of styles for table, headers, and cells." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Provides integration with other TypeComposer components for flexible layouts." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Includes responsive and interactive features, such as row highlighting." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "2. Basic Example" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { TableElement } from \"typecomposer\";\n\nclass ExampleTable extends TableElement {\n  constructor() {\n    super({\n      headers: [\"Name\", \"Age\", \"Occupation\"],\n      rows: [\n        [\"Alice\", \"30\", \"Engineer\"],\n        [\"Bob\", \"25\", \"Designer\"],\n        [\"Charlie\", \"35\", \"Manager\"],\n      ],\n      className: \"border border-gray-300\",\n    });\n  }\n}\n\nexport default ExampleTable;"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "3. Properties" }
+    },
+    {
+      "component": "TableElement",
+      "props": {
+        "headers": ["Property", "Type", "Description", "Example"],
+        "rows": [
+          ["headers", "string[]", "An array of column headers for the table.", "[\"Name\", \"Age\", \"Occupation\"]"],
+          ["rows", "string[][]", "A 2D array representing the rows of the table.", "[[\"Alice\", \"30\"], [\"Bob\", \"25\"]]"],
+          ["className", "string", "CSS class for styling the table.", "\"border border-gray-300\""],
+          ["cellClassName", "string", "CSS class for styling individual cells.", "\"px-4 py-2 text-left\""],
+          ["striped", "boolean", "Enables striped rows for better readability.", "true"],
+          ["hoverable", "boolean", "Adds hover effects to rows.", "true"],
+          ["onclick", "function", "Event handler triggered on row clicks.", "(row) => console.log(row)"]
+        ],
+        "className": "border border-gray-300"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "4. Examples" }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Basic Table with Headers and Rows" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new TableElement({\n  headers: [\"Name\", \"Age\", \"City\"],\n  rows: [\n    [\"John\", \"28\", \"New York\"],\n    [\"Jane\", \"32\", \"San Francisco\"],\n    [\"Sam\", \"24\", \"Los Angeles\"],\n  ],\n  className: \"border border-gray-300\",\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Striped and Hoverable Table" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new TableElement({\n  headers: [\"Product\", \"Price\", \"Stock\"],\n  rows: [\n    [\"Laptop\", \"$1000\", \"Available\"],\n    [\"Smartphone\", \"$700\", \"Out of Stock\"],\n    [\"Tablet\", \"$500\", \"Limited\"],\n  ],\n  striped: true,\n  hoverable: true,\n  className: \"border border-gray-300\",\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Interactive Table with Row Click Event" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new TableElement({\n  headers: [\"Task\", \"Status\"],\n  rows: [\n    [\"Design Homepage\", \"Completed\"],\n    [\"Implement API\", \"In Progress\"],\n    [\"Write Documentation\", \"Pending\"],\n  ],\n  onclick: (row) => console.log(\"Row clicked:\", row),\n  className: \"border border-gray-300\",\n});"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "5. Default Behavior" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "By default, the TableElement:" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Displays a basic table without any additional styling." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Does not apply row hover or striping unless explicitly enabled." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Allows for dynamic header and row definitions through properties." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "6. When to Use TableElement" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- When you need to create dynamic, data-driven tables with minimal effort." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- For creating styled and interactive tables in your application." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- When you want to integrate tables with other TypeComposer components." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Conclusion" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The TableElement simplifies the process of creating structured, styled, and interactive tables in TypeComposer. Its property-driven approach allows for easy customization and integration, making it ideal for displaying tabular data in a clean and efficient way."
+      }
+    }
+  ]
+}

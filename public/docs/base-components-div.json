@@ -1,0 +1,124 @@
+{
+  "docs": [
+    {
+      "component": "H1Element",
+      "props": {
+        "innerText": "Overview"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The DivElement is a foundational component in TypeComposer, extending the native HTMLDivElement. It serves as a generic container for organizing content and provides additional property-driven customization for styling, content, and behavior."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Allows configuration through properties such as text, styles, and events."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Supports child components, enabling nested and structured layouts."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Provides extensive styling options, including padding, margins, borders, and background colors."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": {
+        "innerText": "Teste"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": {
+        "innerText": "With Nested Children"
+      }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { ButtonElement, DivElement } from \"typecomposer\";\n\nnew DivElement({\n  children: [\n    new ButtonElement({ text: \"Button 1\", onclick: () => console.log(\"Button 1 clicked\") }),\n    new ButtonElement({ text: \"Button 2\", onclick: () => console.log(\"Button 2 clicked\") }),\n  ],\n  padding: \"10px\",\n  backgroundColor: \"#e9ecef\",\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": {
+        "innerText": "Responsive Design"
+      }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new DivElement({\n  text: \"Responsive Div\",\n  width: \"50%\",\n  height: \"auto\",\n  padding: \"15px\",\n  backgroundColor: \"#f8f9fa\",\n});"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": {
+        "innerText": "5. Default Behavior"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "By default, the DivElement:"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Does not apply any styles unless specified through properties."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- Accepts plain text, HTML content, or nested child components."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": {
+        "innerText": "6. When to Use Div2Element"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- When you need a flexible and generic container."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- For creating reusable layouts or wrappers."
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "- To add interactivity with events like `onclick`."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": {
+        "innerText": "Conclusion"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The DivElement is a versatile and essential building block in TypeComposer. By extending the native HTMLDivElement, it provides enhanced capabilities for customization and layout structuring while retaining full compatibility with standard HTML behavior. Use it to create dynamic and structured interfaces effortlessly."
+      }
+    }
+  ]
+}

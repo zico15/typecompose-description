@@ -14,7 +14,11 @@
     "noEmit": true,
 
     "allowSyntheticDefaultImports": true,
-
+    /* JSX */
+    "jsx": "preserve",
+    "jsxFactory": "createElement",
+    "jsxFragmentFactory": "createFragment",
+    "checkJs": true,
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
@@ -32,7 +36,7 @@
     },
 
     /* Type checking */
-    "types": ["vite/client", "typecomposer-plugin/client", "typecomposer/typings"]
+    "types": ["vite/client", "typecomposer/typings", "typecomposer/translation"]
   },
   "include": ["src"]
 }

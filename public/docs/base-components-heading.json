@@ -1,0 +1,144 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": { "innerText": "TypeComposer ∙ Heading Elements (H1Element to H6Element)" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Overview" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The Heading Elements (H1Element through H6Element) in TypeComposer are specialized components for creating semantic and styled headings. These components correspond to the standard HTML <h1> to <h6> tags, providing developers with a consistent API for managing text content, styles, and interactivity while adhering to best practices for web accessibility and semantics."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "1. Key Features" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Semantic Tags:** Each element corresponds to its respective HTML heading tag, ensuring proper document structure." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Customizable Styling:** Apply classes, inline styles, and other visual properties for tailored designs." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Dynamic Content:** Easily bind or set text content using the `text` property." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Event Handling:** Attach events such as `onclick` or `onhover` for interactive headings." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Responsive Design:** Combine with external CSS libraries like Tailwind for responsive typography." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "2. Use Cases" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Building semantic, accessible headings for websites or applications." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Styling headings dynamically based on application state or user interactions." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Creating responsive typography with adjustable styles for different viewports." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "3. Basic Examples" }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "3.1 H1Element Example" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { H1Element } from \"typecomposer\";\n\nclass ExampleH1 extends H1Element {\n  constructor() {\n    super({\n      text: \"Welcome to TypeComposer!\",\n      className: \"text-4xl font-bold text-gray-800\",\n    });\n  }\n}\n\nexport default ExampleH1;"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "3.2 H2Element Example" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { H2Element } from \"typecomposer\";\n\nclass ExampleH2 extends H2Element {\n  constructor() {\n    super({\n      text: \"Explore the Components\",\n      className: \"text-3xl font-semibold text-gray-600\",\n    });\n  }\n}\n\nexport default ExampleH2;"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "3.3 H3Element to H6Element Example" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { H3Element, H4Element, H5Element, H6Element } from \"typecomposer\";\n\nclass ExampleHeadings {\n  constructor() {\n    this.headings = [\n      new H3Element({ text: \"Section Title\", className: \"text-2xl text-blue-600\" }),\n      new H4Element({ text: \"Subsection Title\", className: \"text-xl text-blue-500\" }),\n      new H5Element({ text: \"Smaller Heading\", className: \"text-lg text-blue-400\" }),\n      new H6Element({ text: \"Smallest Heading\", className: \"text-md text-blue-300\" }),\n    ];\n  }\n}\n\nexport default ExampleHeadings;"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "4. Advanced Features" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The Heading Elements support additional properties to provide more flexibility and functionality:"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Dynamic Styles:** Use `style` property for inline styles or `className` for CSS classes." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Accessibility Features:** Add `aria-label`, `tabindex`, or `role` attributes for better accessibility." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Nested Layouts:** Easily integrate with other components to create complex structures, such as a header navigation." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Event Handlers:** Implement `onclick`, `onhover`, or custom events for interactive behavior." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "5. Accessibility Best Practices" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Ensure heading levels are used hierarchically (e.g., <h1> followed by <h2>, not <h3>)." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Use clear and descriptive text content for better SEO and user experience." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Add `aria-label` attributes where additional context is needed for screen readers." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "6. Conclusion" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The Heading Elements in TypeComposer provide a robust and customizable solution for creating structured and accessible headings. By leveraging their semantic nature and property-driven configuration, developers can efficiently build visually appealing and interactive headings for their applications."
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": { "innerText": "Typecomposer . Getting Started" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Getting Started" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "To create a new project using TypeComposer, follow these steps:"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Create a New Project" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Use the official TypeComposer project initializer:" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": { "code": "npm create typecomposer@latest" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Follow the prompts:" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Select the template you want:" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Project or Library." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Choose the language:" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "TypeScript, TypeScript + TailwindCSS, or JavaScript." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Enter the project name." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Decide whether to include a router (optional)." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Once the setup is complete, navigate to your project directory and install dependencies:"
+      }
+    },
+    {
+      "component": "CodeComponent",
+      "props": { "code": "cd <project-name>\n    npm install" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Start the development server:" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": { "code": "npm start" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Example" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "For instance, to create a new TypeScript project named typecomposer-project without a router:"
+      }
+    },
+    {
+      "component": "CodeComponent",
+      "props": { "code": "npm create typecomposer@latest" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "Prompts:" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "Template: Project\n    Language: TypeScript\n    Project Name: typecomposer-project\n    Router: no"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Commands:" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "cd typecomposer-project\n    npm install\n    npm start"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "Don’t worry if you’re new to TypeComposer! Start by creating components and building your application gradually. Dive into advanced features as you get more comfortable."
+      }
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": { "innerText": "TypeComposer ∙ SpanElement" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Overview" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The SpanElement is a core component in TypeComposer designed to facilitate inline text styling and behavior customization. It extends the standard HTML <span> element, allowing developers to define text, styles, and events declaratively through properties. This makes SpanElement ideal for dynamic UIs, where inline elements need to adapt to user interactions or data changes."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "1. Key Features" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Text Content:** Use the `text` property to directly set the inline text of the span." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Styling:** Customize the appearance with properties such as `className`, `style`, `color`, `fontSize`, and more." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Dynamic Events:** Attach event handlers like `onclick`, `onhover`, or `ondblclick` to respond to user interactions." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Integration:** Works seamlessly within layouts and can be nested inside other components for advanced use cases." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Accessibility:** Supports attributes such as `aria-label` for improving accessibility and screen reader compatibility." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "2. Common Use Cases" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Highlighting specific words or phrases within a block of text." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Applying inline styles to small pieces of content." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Adding tooltips, hover effects, or click events to text snippets." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Dynamically updating inline text based on user actions or data." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "3. Detailed Example" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { SpanElement } from \"typecomposer\";\n\nclass StyledSpan extends SpanElement {\n  constructor() {\n    super({\n      text: \"Click me!\",\n      className: \"text-green-600 font-bold hover:text-green-800 transition-all cursor-pointer\",\n      style: { padding: \"5px\", borderRadius: \"4px\", border: \"1px solid green\" },\n      onclick: () => alert(\"Span clicked!\"),\n    });\n  }\n}\n\nexport default StyledSpan;"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "4. Advanced Configuration" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The SpanElement supports additional properties to meet more complex requirements. Below are some advanced configurations:"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Dynamic Content:** Combine `text` with variables or state management tools to display dynamic data." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Custom Events:** Define your own event handlers using properties like `onmouseenter` or `onmouseleave`." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **CSS Modules or Tailwind:** Use `className` to leverage external styling libraries like Tailwind or CSS modules for consistent design." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- **Accessibility Attributes:** Add attributes such as `role`, `tabindex`, and `aria-hidden` to improve the component's accessibility." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "5. Accessibility Best Practices" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "To ensure that your SpanElement is accessible to all users, consider the following:"
+      }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Use `aria-label` or `title` attributes to provide context for screen readers." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Avoid using `onclick` without an accessible equivalent for keyboard or screen reader users." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Test the component with assistive technologies to verify proper functionality." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "6. Full Example with Accessibility and Dynamic Behavior" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { SpanElement } from \"typecomposer\";\n\nclass AccessibleDynamicSpan extends SpanElement {\n  constructor() {\n    super({\n      text: \"Hover or click me!\",\n      className: \"text-purple-500 hover:underline focus:outline focus:ring-2 focus:ring-purple-300\",\n      style: { padding: \"8px\", display: \"inline-block\" },\n      onclick: () => alert(\"You clicked the span!\"),\n      onhover: () => console.log(\"Hovered over span\"),\n      ariaLabel: \"Interactive span example\",\n      tabindex: \"0\",\n    });\n  }\n}\n\nexport default AccessibleDynamicSpan;"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "7. Conclusion" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The SpanElement in TypeComposer is a powerful tool for creating highly customizable inline text elements. Its property-driven design allows for seamless styling, event handling, and accessibility, making it an essential component for modern web development."
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": { "innerText": "TypeComposer ∙ LabelElement" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Overview" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The LabelElement is a versatile component in TypeComposer that extends the functionality of the native HTMLLabelElement. It simplifies the association of labels with form controls while offering customization options for styling and interaction."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "1. Key Features" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Inherits all native functionalities of HTMLLabelElement." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Supports property-driven customization for text, styles, and associations with form elements." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Provides event handlers for user interactions, such as `onclick`." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Enables flexible styling for creating visually appealing labels." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "2. Basic Example" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { LabelElement, InputElement } from \"typecomposer\";\n\nclass ExampleLabel extends LabelElement {\n  constructor() {\n    super({\n      text: \"Name:\",\n      for: \"nameInput\",\n      fontSize: \"16px\",\n      color: \"#333\",\n    });\n  }\n}\n\nclass ExampleInput extends InputElement {\n  constructor() {\n    super({\n      id: \"nameInput\",\n      type: \"text\",\n      placeholder: \"Enter your name\",\n    });\n  }\n}\n\nexport default { ExampleLabel, ExampleInput };"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "3. Properties" }
+    },
+    {
+      "component": "TableElement",
+      "props": {
+        "headers": ["Property", "Type", "Description", "Example"],
+        "rows": [
+          ["innerText", "string", "Defines the text displayed inside the label.", "\"Name:\""],
+          ["for", "string", "Associates the label with a form control using its ID.", "\"inputId\""],
+          ["fontSize", "string | number", "Sets the font size of the label.", "\"14px\" or 16"],
+          ["color", "string", "Defines the text color of the label.", "\"#333\""],
+          ["padding", "string", "Sets padding around the label text.", "\"5px\""],
+          ["margin", "string", "Sets margin around the label.", "\"10px\""],
+          ["onclick", "function", "Event handler triggered when the label is clicked.", "() => alert(\"Label clicked!\")"]
+        ],
+        "className": "border border-gray-300"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "4. Examples" }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Basic Label Associated with Input" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new LabelElement({\n  text: \"Email:\",\n  for: \"emailInput\",\n  fontSize: \"14px\",\n  color: \"#555\",\n});\n\nnew InputElement({\n  id: \"emailInput\",\n  type: \"email\",\n  placeholder: \"Enter your email\",\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Styled Label with Padding" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new LabelElement({\n  text: \"Password:\",\n  for: \"passwordInput\",\n  padding: \"5px 10px\",\n  fontSize: \"16px\",\n  color: \"#000\",\n});\n\nnew InputElement({\n  id: \"passwordInput\",\n  type: \"password\",\n  placeholder: \"Enter your password\",\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Interactive Label with Click Event" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new LabelElement({\n  text: \"Click Me:\",\n  for: \"interactiveInput\",\n  fontSize: \"16px\",\n  color: \"#007bff\",\n  onclick: () => alert(\"Label clicked!\"),\n});\n\nnew InputElement({\n  id: \"interactiveInput\",\n  type: \"text\",\n  placeholder: \"This input is linked to the label\",\n});"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "5. Default Behavior" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "By default, the LabelElement:" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Inherits the native behavior of HTMLLabelElement." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Does not apply any predefined styles unless specified through properties." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Allows association with form elements using the `for` property." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "6. When to Use LabelElement" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- For associating labels with form controls to enhance accessibility." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- When creating styled and interactive labels for forms." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- To handle user interactions, such as clicks, on labels." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Conclusion" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The LabelElement is an essential component for creating accessible and styled form labels in TypeComposer. Its property-driven configuration simplifies customization and ensures seamless integration with other form elements, making it a vital tool for building user-friendly forms."
+      }
+    }
+  ]
+}

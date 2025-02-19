@@ -1,0 +1,153 @@
+{
+  "docs": [
+    {
+      "component": "SpanElement",
+      "props": { "innerText": "TypeComposer ∙ InputElement" }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Overview" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The InputElement is a fundamental component in TypeComposer, extending the native HTMLInputElement. It provides an enhanced interface for creating text inputs with additional customization options for styling, behavior, and interaction."
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "1. Key Features" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Inherits all native functionalities of HTMLInputElement." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Supports a property-driven configuration for types, placeholders, and styles." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Provides event handlers for user interactions, such as `oninput` and `onfocus`." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Enables extensive styling, including padding, borders, and background customization." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "2. Basic Example" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "import { InputElement } from \"typecomposer\";\n\nclass ExampleInput extends InputElement {\n  constructor() {\n    super({\n      type: \"text\",\n      placeholder: \"Enter your name\",\n      width: \"100%\",\n      padding: \"10px\",\n      border: \"1px solid #ccc\",\n      borderRadius: \"5px\",\n      oninput: (event) => console.log(\"Input value:\", event.target.value),\n    });\n  }\n}\n\nexport default ExampleInput;"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "3. Properties" }
+    },
+    {
+      "component": "TableElement",
+      "props": {
+        "headers": ["Property", "Type", "Description", "Example"],
+        "rows": [
+          ["type", "string", "Defines the input type (e.g., 'text', 'password', 'email').", "\"text\""],
+          ["placeholder", "string", "Specifies placeholder text displayed when input is empty.", "\"Enter your email\""],
+          ["value", "string", "Sets the current value of the input.", "\"John Doe\""],
+          ["width", "string | number", "Sets the input's width.", "\"100%\" or 300"],
+          ["padding", "string", "Applies padding inside the input field.", "\"10px\""],
+          ["border", "string", "Defines the input's border style.", "\"1px solid #000\""],
+          ["borderRadius", "string | number", "Defines the corner radius for rounded borders.", "\"5px\""],
+          ["backgroundColor", "string", "Specifies the input's background color.", "\"#f9f9f9\""],
+          ["color", "string", "Sets the text color of the input.", "\"#333\""],
+          ["oninput", "function", "Event handler triggered when input value changes.", "(event) => console.log(event)"],
+          ["onfocus", "function", "Event handler triggered when input gains focus.", "() => console.log(\"Input focused\")"],
+          ["onblur", "function", "Event handler triggered when input loses focus.", "() => console.log(\"Input blurred\")"]
+        ],
+        "className": "border border-gray-300"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "4. Examples" }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Simple Text Input" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new InputElement({\n  type: \"text\",\n  placeholder: \"Enter your name\",\n  padding: \"10px\",\n  border: \"1px solid #ccc\",\n  borderRadius: \"5px\",\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Password Input with Custom Style" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new InputElement({\n  type: \"password\",\n  placeholder: \"Enter your password\",\n  width: \"300px\",\n  padding: \"12px\",\n  border: \"2px solid #007bff\",\n  borderRadius: \"8px\",\n  backgroundColor: \"#f0f8ff\",\n  onfocus: () => console.log(\"Password input focused\"),\n});"
+      }
+    },
+    {
+      "component": "H2Element",
+      "props": { "innerText": "Email Input with Event Handling" }
+    },
+    {
+      "component": "CodeComponent",
+      "props": {
+        "code": "new InputElement({\n  type: \"email\",\n  placeholder: \"Enter your email\",\n  padding: \"10px\",\n  border: \"1px solid #ccc\",\n  borderRadius: \"5px\",\n  oninput: (event) => console.log(\"Email input value:\", event.target.value),\n});"
+      }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "5. Default Behavior" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "By default, the InputElement:" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Behaves like a native HTMLInputElement." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Does not apply any predefined styles unless specified through properties." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- Supports all standard input types and behaviors." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "6. When to Use InputElement" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- For creating styled and interactive input fields." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- When you need event-driven inputs for real-time feedback." }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": { "innerText": "- For implementing customizable form elements in your application." }
+    },
+    {
+      "component": "H1Element",
+      "props": { "innerText": "Conclusion" }
+    },
+    {
+      "component": "ParagraphElement",
+      "props": {
+        "innerText": "The InputElement is a versatile and essential component for building forms and interactive user interfaces in TypeComposer. Its property-driven approach simplifies configuration and styling, while its compatibility with HTMLInputElement ensures reliable and familiar behavior. Use it to create polished, dynamic input fields tailored to your application's needs."
+      }
+    }
+  ]
+}
