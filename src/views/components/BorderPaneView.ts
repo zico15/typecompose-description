@@ -1,6 +1,6 @@
 import { CodeComponent } from "@/components/code/CodeComponent";
 import { SpanElement, H1Element, ParagraphElement, H2Element, TableElement, DivElement, ImageElement } from "typecomposer";
-import { BaseView } from "../base-components/Base";
+import { BaseView } from "../elements/Base";
 
 
 export class BorderPaneView extends BaseView {

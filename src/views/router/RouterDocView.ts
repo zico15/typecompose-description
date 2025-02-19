@@ -1,6 +1,6 @@
 import { CodeComponent } from "@/components/code/CodeComponent";
 import { SpanElement, H1Element, ParagraphElement, TableElement } from "typecomposer";
-import { BaseView } from "../base-components/Base";
+import { BaseView } from "../elements/Base";
 
 
 export class RouterDocView extends BaseView {
